@@ -1,4 +1,4 @@
-# TechicalTaskKN
+# TechnicalTaskKN
 
 #The application can be run by typing "npm run start" in the terminal.
 
