@@ -11,3 +11,5 @@
 #Swagger docs are available via "http://localhost:8080/api-docs/"
 
 #Mock dataset can be found in db/mockDb.js
+
+#Example of api call: http://localhost:8080/data/10-01-2021/12-02-2022

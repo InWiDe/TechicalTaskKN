@@ -1,6 +1,9 @@
-export default function processData (filteredData) {
+/**
+ * Function, that processes data by grouping it and counting unique id's per year
+ */
+export default function processData (data) {
   const result = []
-  const groupedData = filteredData.reduce((groups, x) => {
+  const groupedData = data.reduce((groups, x) => {
     const year = new Date(x.date).getFullYear()
     if (!groups[year]) {
       groups[year] = []

@@ -5,6 +5,13 @@ import processData from '../actions/processData.js'
 
 const router = new express.Router()
 
+/**
+ * Endpoint, that retrieves all processed data
+ * @params {from}, from specific date
+ * @params {to}, to specific date
+ * @returns 200 response with processed data
+ * @error returns 400 response if bad request, 404 if no data found within defined timespan.
+ */
 router.get('/data/:from/:to', async (req, res) => {
   try {
     const dateFormat = 'MM-DD-YYYY'
